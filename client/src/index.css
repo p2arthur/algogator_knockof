@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "../node_modules/ag-grid-community/src/styles/ag-grid.scss";
+@import "../node_modules/ag-grid-community/src/styles/ag-theme-material/sass/ag-theme-material-mixin";
+
+.ag-theme-gator {
+  @include ag-theme-material(
+    (
+      background-color: #333,
+      header-background-color: #e65100,
+      foreground-color: #fff,
+      secondary-foreground-color: #eee,
+      row-hover-color: #444,
+    )
+  );
+}
+
+html {
+  font-family: "Nunito", monospace;
+}
+
+/* src/theme.scss */
